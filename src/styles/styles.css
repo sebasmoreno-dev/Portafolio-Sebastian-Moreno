@@ -2,6 +2,7 @@
 html {
   box-sizing: border-box;
   font-size: 16px;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -32,8 +33,13 @@ ul {
 
 img {
   max-width: 100%;
-  height: auto;
+  height: 50px;
 }
+
+.icon {
+  font-size: 50px;
+}
+
 
 /*--- end of reset ----*/
 
@@ -44,12 +50,19 @@ img {
   --main-font: "Oswald", sans-serif;
   --secondary-font: "Open Sans", sans-serif;
   --shadow: rgba(0, 0, 0, 0.75);
-  --verde: #7ac943;
+  
+  --blue-dark: #053742;
+  --blue: #39A2DB;
+  --blue-light: #A2DBFA;
+  --light: #E8F0F2;
+}
+
+body {
+  background-image: linear-gradient(to bottom, #39a2db, #1f86b1, #0b6b89, #045164, #053742);
 }
 
 body, header, section {
   align-items: center;
-  background-color: var(--gris-medio);
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -77,11 +90,11 @@ body, header, section {
   color: var(--blanco);
   font-family: var(--main-font);
   font-size: 55px;
-  margin-top: 16px;
+  margin-top: 20px;
 }
 
 .subtitle {
-  color: var(--verde);
+  color: var(--blue-light);
   font-family: var(--secondary-font);
   font-size: 24px;
 }
@@ -91,13 +104,15 @@ body, header, section {
   border: 1px solid var(--gris-oscuro);
   box-shadow: 8px 16px 32px 0px var(--shadow);
   height: 300px;
-  margin-top: 80px;
+  margin: 55px;
   width: 300px;
 }
 
 nav {
   width: 100%;
+  margin: 0 0 30px;
 }
+
 
 .navigation {
   color: var(--blanco);
@@ -111,6 +126,7 @@ nav {
 .nav-item a {
   text-decoration: none;
   color: var(--blanco);
+  font-size: 25px;
 }
 
 .nav-item {
@@ -121,17 +137,18 @@ nav {
   height: 30px;
   justify-content: center;
   width: 33%;
+  height: 50px;
 }
 
 .nav-item:hover,
 .nav-item:hover a {
-  background-color: var(--verde);
+  background-color: var(--blue-light);
   color: var(--gris-oscuro);
   cursor: pointer;
 }
 
 .nav-item:focus-within {
- background-color: var(--verde); 
+ background-color: var(--blue-light);
 }
 
 .nav-item a:focus {
@@ -140,8 +157,16 @@ nav {
 }
 
 .intro {
-  margin: 24px 196px 0;
+  margin: 10px 0 40px;
   font-family: var(--secondary-font);
+  font-size: 18px;
+  color: var(--blanco);
+  width: 60%;
+}
+.intro-contact {
+  margin: 10px 0 40px;
+  font-family: var(--secondary-font);
+  font-size: 18px;
   color: var(--blanco);
 }
 
@@ -149,7 +174,8 @@ nav {
   align-items: center;
   display: flex;
   justify-content: space-around;
-  margin: 32px auto 0;
+  margin: 40px;
+  width: 50%;
 }
 
 .social-media li a {
@@ -165,7 +191,7 @@ nav {
 }
 
 .social-media li:focus-within {
-  outline: 3px solid var(--verde);
+  outline: 3px solid var(--blue-light);
   padding: 8px;
 }
 
@@ -189,7 +215,8 @@ nav {
 .project-container {
   left: 0;
   position: relative;
-  width: 1500px;
+  width: 80%;
+  height: 500px;
 }
 
 .project-container li {
@@ -203,7 +230,7 @@ nav {
 }
 
 .project-container button:focus-within {
-  outline: 3px solid var(--verde);
+  outline: 3px solid var(--blue-light);
 }
 
 .project-img {
@@ -213,7 +240,7 @@ nav {
   height: 400px;
   margin: 0 8px;
   transition: all 0.2s ease-in-out;
-  width: 250px;
+  width: 400px;
   object-fit: cover;
 }
 
@@ -233,24 +260,23 @@ nav {
 }
 
 .arrow-left {
-  background: center / contain no-repeat url(./images/play-button-left.png);
-  background-color: var(--verde);
+  background: center / contain no-repeat url("../assets/icons/play-button-left.png");
+  background-color: var(--blue-light);
   border-radius: 50%;
 }
 
 .arrow-right {
-  background: center / contain no-repeat url(./images/play-button-right.png);
-  background-color: var(--verde);
+  background: center / contain no-repeat url("../assets/icons/play-button-right.png");
+  background-color: var(--blue-light);
   border-radius: 50%;
 }
 
 .arrow:focus {
-  outline: 3px solid var(--verde);
+  outline: 3px solid var(--blue-light);
 }
 
 .contact-section {
   align-items: center;
-  background-color: var(--gris-oscuro);
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -264,7 +290,7 @@ nav {
 
 .form-label,
 .message-input {
-  color: var(--verde);
+  color: var(--blanco);
   font-family: var(--secondary-font);
 }
 
@@ -278,14 +304,14 @@ input {
 }
 
 input:focus {
-  outline: 3px solid var(--verde);
+  outline: 3px solid var(--blue-light);
   padding: 8px;
 }
 
 .send-button,
 .modal-button {
   align-items: center;
-  background-color: var(--verde);
+  background-color: var(--light);
   border-radius: 5px;
   color: var(--gris-oscuro);
   font-family: var(--secondary-font);
@@ -302,7 +328,7 @@ input:focus {
 .send-button:focus,
 .modal-button:focus {
   border: 5px solid var(--gris-oscuro);
-  outline: 3px solid var(--verde);
+  outline: 3px solid var(--blue-light);
 }
 
 #name-error {
@@ -312,7 +338,7 @@ input:focus {
 
 .notification {
   align-items: center;
-  background-color: var(--verde);
+  background-color: var(--blue-light);
   border-radius: 5px;
   box-shadow: 8px 16px 32px 0px var(--shadow);
   color: var(--gris-oscuro);
@@ -328,7 +354,7 @@ input:focus {
 
 .modal-container {
   align-items: center;
-  background-color: rgba(000, 000, 000, 0.2);
+  background-color: var(--blue-dark);
   display: none;
   height: 100vh;
   justify-content: center;
@@ -336,30 +362,37 @@ input:focus {
   width: 100vw;
 }
 
-#modal-header {
-  outline: 3px solid var(--verde);
-}
+/* #modal-header {
+  outline: 3px solid var(--blue-light);
+} */
 
 .modal {
   align-items: center;
-  background-color: var(--gris-oscuro);
+  /* background-color: var(--gris-oscuro); */
+  background-image: linear-gradient(to bottom, #39a2db, #1f86b1, #0b6b89, #045164, #053742);
   border-radius: 5px;
   border: 2px solid #000;
   display: flex;
   flex-direction: column;
-  height: 600px;
+  height: 800px;
   justify-content: center;
   position: fixed;
   top: 5%;
-  width: 700px;
+  width: 70%;
   padding: 56px;
 }
 
+#modal-header {
+  color: var(--blanco);
+    font-family: var(--main-font);
+    font-size: 55px;
+}
+
 .modal-project-image {
-  background: center / cover no-repeat url(./images/project1.png);
+  background: center / cover no-repeat url("../assets/images/project1.png");
   border-radius: 5px;
   border: 2px solid #000;
-  height: 400px;
-  margin: 16px;
-  width: 550px;
+  height: 600px;
+  margin: 50px 0 40px;
+  width: 650px;
 }

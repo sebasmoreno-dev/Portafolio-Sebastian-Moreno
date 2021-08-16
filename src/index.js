@@ -1,4 +1,4 @@
-window.onload = () => {
+/* window.onload = () => {
   document.querySelector(".arrow-right").addEventListener("click", clickRight);
   document.querySelector(".arrow-left").addEventListener("click", clickLeft);
   document
@@ -12,7 +12,7 @@ window.onload = () => {
 };
 
 /** Esta funcion se llama cuando la persona hace click en la fecha derecha del carousel para navegar a la derecha */
-function clickRight() {
+/* function clickRight() {
   const currentLeft = parseInt(
     getComputedStyle(document.querySelector(".project-container")).left,
     10
@@ -38,10 +38,10 @@ function clickRight() {
     default:
       break;
   }
-}
+} */
 
 /** Esta funcion se llama cuando la persona hace click en la fecha izquierda del carousel para navegar a la izquierda */
-function clickLeft() {
+/* function clickLeft() {
   const currentLeft = parseInt(
     getComputedStyle(document.querySelector(".project-container")).left,
     10
@@ -67,7 +67,7 @@ function clickLeft() {
     default:
       break;
   }
-}
+} */
 
 /** Validar el formulario antes de mostrar la notificacion */
 function validateForm(e) {
