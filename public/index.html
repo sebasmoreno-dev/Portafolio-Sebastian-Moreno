@@ -104,10 +104,16 @@
         <span id="name-error" aria-live="assertive"></span>
         <br />
         <label class="form-label">Correo</label><input type="text" aria-label="correo"/> <br />
-        <label class="message-input">Mensaje<input type="text" /> <br /></label>
-        <button class="send-button">Enviar</button>
+        <label class="message-input">Mensaje<input type="text" aria-label="mensaje"/> <br /></label>
+        <button class="send-button" aria-label="enviar">Enviar</button>
       </form>
     </footer>
+
+    <section class="loader">
+      <div></div>
+      <div></div>
+      <div></div>
+    </section>
 
     <div class="notification" aria-live="assertive"></div>
     <div class="modal-container">

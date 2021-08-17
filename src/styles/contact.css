@@ -28,10 +28,26 @@
     outline: none;
 }
 
-.social-media li:focus-within {
+/* .social-media li:focus-within {
     outline: 3px solid var(--blue-light);
     padding: 8px;
+} */
+
+.social-media li a:hover ,
+.social-media li a:hover p  {
+    background-color: var(--blue-light);
+    color: var(--gris-oscuro);
+    cursor: pointer;
+    border-radius: 5px;
 }
+
+.social-media li a:focus {
+    outline: none;
+    color: var(--gris-oscuro);
+    background-color: var(--blue-light);
+    border-radius: 5px;
+}
+
 
 .social-link-text {
     padding-right: 8px;

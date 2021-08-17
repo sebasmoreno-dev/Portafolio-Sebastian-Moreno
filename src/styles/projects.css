@@ -54,6 +54,7 @@
 .subTitle-projects a {
     text-decoration: none;
     color: var(--blanco);
+    margin-bottom: 5px;
 }
 
 .subTitle-projects:hover,
@@ -64,18 +65,46 @@
     border-radius: 5px;
 }
 
+.subTitle-projects a:focus {
+    outline: none;
+    color: var(--gris-oscuro);
+    background-color: var(--blue-light);
+    border-radius: 5px;
+}
+
 .project-img {
     border-radius: 10px;
     display: inline-block;
-    height: 500px;
+    height: 460px;
     transition: all 0.2s ease-in-out;
     width: 500px;
     object-fit: unset;
 }
+
+.project-container button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    transition: transform 0.5s ease-in-out;
+}
+
+/* .project-container button:focus-within {
+    outline: 3px solid var(--blue-light);
+} */
+
+.project:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: transform 0.5s ease-in-out;
+}
+
+
+/* .project-container li {
+    display: inline-block;
+} */
+
 /*
-
-
-
 .window {
     overflow: hidden;
     width: 815px;
@@ -83,27 +112,6 @@
 }
 
 
-
-.project-container li {
-    display: inline-block;
-}
-
-.project-container button {
-    background: none;
-    border: none;
-    padding: 0;
-}
-
-.project-container button:focus-within {
-    outline: 3px solid var(--blue-light);
-}
-
-
-
-.project:hover {
-    cursor: pointer;
-    transform: scale(1.1);
-}
 
 
 
