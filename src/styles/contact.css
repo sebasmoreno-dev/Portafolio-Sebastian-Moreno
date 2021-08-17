@@ -3,8 +3,8 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 750px;
-    margin-top: 550px;
+    height: auto;
+    margin-top: 80px;
 }
 
 
@@ -14,6 +14,7 @@
     justify-content: space-around;
     margin: 40px;
     width: 50%;
+    height: 60px;
 }
 
 .social-media li a {
@@ -33,6 +34,10 @@
     padding: 8px;
 } */
 
+.social-media li a:hover {
+    border: 3px solid var(--blanco);
+}
+
 .social-media li a:hover ,
 .social-media li a:hover p  {
     background-color: var(--blue-light);
@@ -46,6 +51,7 @@
     color: var(--gris-oscuro);
     background-color: var(--blue-light);
     border-radius: 5px;
+    border: 3px solid var(--blanco);
 }
 
 
@@ -97,10 +103,18 @@ input:focus {
     cursor: pointer;
 }
 
+.send-button:hover,
+.modal-button:hover {
+    border: 3px solid var(--blanco);
+    background: var(--blue-light);
+    color: var(--gris-oscuro);
+}
+
 .send-button:focus,
 .modal-button:focus {
-    border: 5px solid var(--gris-oscuro);
-    outline: 3px solid var(--blue-light);
+    border: 3px solid var(--blanco);
+    background: var(--blue-light);
+    color: var(--gris-oscuro);
 }
 
 #name-error {

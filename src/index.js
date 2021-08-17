@@ -1,4 +1,4 @@
-/* window.onload = () => {
+window.onload = () => {
   document.querySelector(".arrow-right").addEventListener("click", clickRight);
   document.querySelector(".arrow-left").addEventListener("click", clickLeft);
   document
@@ -11,8 +11,8 @@
   document.body.addEventListener("keyup", e => listenForEsc(e));
 };
 
-/** Esta funcion se llama cuando la persona hace click en la fecha derecha del carousel para navegar a la derecha */
-/* function clickRight() {
+/**Esta funcion se llama cuando la persona hace click en la fecha derecha del carousel para navegar a la derecha */
+function clickRight() {
   const currentLeft = parseInt(
     getComputedStyle(document.querySelector(".project-container")).left,
     10
@@ -38,10 +38,10 @@
     default:
       break;
   }
-} */
+}
 
 /** Esta funcion se llama cuando la persona hace click en la fecha izquierda del carousel para navegar a la izquierda */
-/* function clickLeft() {
+function clickLeft() {
   const currentLeft = parseInt(
     getComputedStyle(document.querySelector(".project-container")).left,
     10
@@ -67,7 +67,9 @@
     default:
       break;
   }
-} */
+}
+
+
 
 /** Validar el formulario antes de mostrar la notificacion */
 function validateForm(e) {
@@ -91,6 +93,14 @@ function showNotification() {
   }, 3000);
 }
 
+
+//abrir el modal
+/* const modal = document.querySelector('.modal-container')
+const buttonRick = modal.querySelector('projectRick-button')
+
+ */
+
+
 /**Escucha por la clave esc para cerrar el modal */
 function listenForEsc(e) {
   if (e.keyCode === 27){
@@ -101,7 +111,7 @@ function listenForEsc(e) {
 /** Esta funcion se llama cuando la persona hace click en cualquier porjecto del carousel */
 function openModal(e) {
   document.querySelector(".modal-container").style.display = "flex";
-  document.getElementById('modal-header').focus();
+  document.getElementById('modal-header').focus(e);
 }
 
 /** Esta funcion se llama para cerrar el modal */
