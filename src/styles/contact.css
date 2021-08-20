@@ -86,8 +86,7 @@ input:focus {
     padding: 8px;
 }
 
-.send-button,
-.modal-button {
+.send-button {
     align-items: center;
     background-color: var(--light);
     border-radius: 5px;
@@ -103,15 +102,13 @@ input:focus {
     cursor: pointer;
 }
 
-.send-button:hover,
-.modal-button:hover {
+.send-button:hover {
     border: 3px solid var(--blanco);
     background: var(--blue-light);
     color: var(--gris-oscuro);
 }
 
-.send-button:focus,
-.modal-button:focus {
+.send-button:focus {
     border: 3px solid var(--blanco);
     background: var(--blue-light);
     color: var(--gris-oscuro);

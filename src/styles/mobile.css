@@ -1,4 +1,4 @@
-@media screen and (max-width: 425px){
+/* @media screen and (max-width: 425px) */
     .nav-item a {
         text-decoration: none;
         color: var(--blanco);
@@ -54,19 +54,28 @@
     .project-img {
         border-radius: 10px;
         display: inline-block;
-        height: 250px;
+        height: 270px;
         transition: all 0.2s ease-in-out;
-        width: 250px;
-        object-fit: cover;
+        width: 270px;
+        object-fit: unset;
     }
     
+    .social-media {
+        align-items: center;
+        display: flex;
+        justify-content: space-around;
+        margin: 40px;
+        width: 80%;
+        height: 60px;
+    }
+
     .social-media li a {
         align-items: center;
         display: flex;
         color: var(--blanco);
         font-family: var(--secondary-font);
         text-decoration: none;
-        font-size: 15px;
+        font-size: 13px;
         flex-direction: column;
     }
     
@@ -93,6 +102,6 @@
         margin: 55px;
         width: 250px;
     }
-}
+
 
 

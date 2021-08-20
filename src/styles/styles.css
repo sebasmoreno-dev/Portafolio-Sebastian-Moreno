@@ -1,10 +1,10 @@
-@import "./modal.css";
 @import "./global.css";
 @import "./nav.css";
 @import "./projects.css";
 @import "./contact.css";
 @import "./profile.css";
 @import "./loader.css";
+
 
 :root {
   --blanco: white;
