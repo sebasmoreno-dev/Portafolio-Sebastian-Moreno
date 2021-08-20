@@ -1,0 +1,98 @@
+@media screen and (max-width: 425px){
+    .nav-item a {
+        text-decoration: none;
+        color: var(--blanco);
+        font-size: 16px;
+    }
+    .navigation {
+        color: var(--blanco);
+        cursor: pointer;
+        display: flex;
+        justify-content: space-around;
+        margin: 34px auto;
+        width: 80%;
+        height: 80%;
+        align-items: center;
+    }
+    
+    .header {
+        color: var(--blanco);
+        font-family: var(--main-font);
+        font-size: 35px;
+        margin-top: 20px;
+    }
+    
+    .intro {
+        margin: 10px 0 40px;
+        font-family: var(--secondary-font);
+        font-size: 16px;
+        color: var(--blanco);
+        width: 70%;
+    }
+    
+    .tile-proyects {
+        color: var(--blanco);
+        font-family: var(--main-font);
+        font-size: 35px;
+        margin-top: 15px;
+    }
+    
+    .project-card {
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .subTitle-projects a {
+        text-decoration: none;
+        color: var(--blanco);
+        margin-bottom: 5px;
+        font-size: 20px;
+    }
+    
+    .project-img {
+        border-radius: 10px;
+        display: inline-block;
+        height: 250px;
+        transition: all 0.2s ease-in-out;
+        width: 250px;
+        object-fit: cover;
+    }
+    
+    .social-media li a {
+        align-items: center;
+        display: flex;
+        color: var(--blanco);
+        font-family: var(--secondary-font);
+        text-decoration: none;
+        font-size: 15px;
+        flex-direction: column;
+    }
+    
+    .intro-contact {
+        margin: 10px 0 40px;
+        font-family: var(--secondary-font);
+        font-size: 18px;
+        color: var(--blanco);
+        width: 80%;
+    }
+    
+    .form-container {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+    }
+    
+    
+    .header-img {
+        border-radius: 50%;
+        border: 2px solid var(--blanco);
+        box-shadow: 8px 16px 32px 0px var(--shadow);
+        height: 250px;
+        margin: 55px;
+        width: 250px;
+    }
+}
+
+
